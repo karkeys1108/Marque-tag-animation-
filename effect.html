@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Lighter background color */
+}
+
+.marquee-container {
+  color: #000;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+  background-color: #fff; /* White background color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.marquee-content {
+  display: inline-block;
+  padding: 10px; /* Add some padding */
+  color: #333; /* Text color */
+  font-size: 18px; /* Font size */
+  animation: marqueeAnimation 20s linear infinite; /* Slower animation */
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+  </style>
+  <title>Advanced Marquee Effect</title>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>This is an advanced marquee effect using HTML and CSS! 🚀</span>
+    </div>
+  </div>
+</body>
+</html>
